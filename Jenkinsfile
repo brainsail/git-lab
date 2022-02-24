@@ -14,7 +14,7 @@ pipeline {
 
         stage ('Build') {
             when {
-                branch 'feature/* main'
+                branch 'feature/* */main'
             }
             steps {
                 echo "Build Things!"
