@@ -8,7 +8,6 @@ pipeline {
             }
         }
         stage('Test') {
-            when 
             steps {
                 echo 'Testing'
             }
