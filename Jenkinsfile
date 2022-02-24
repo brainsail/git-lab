@@ -18,12 +18,20 @@ pipeline {
                 echo 'Testing...'
             }
         }
-        stage('Deploy') {
+        stage('Develop Deploy') {
+            when {
+                branch 'develop'
+            }
+            steps {
+                echo 'Deploying to Develop....'
+            }
+        }
+        stage('Perf Deploy') {
             when {
                 branch 'main'
             }
             steps {
-                echo 'Deploying....'
+                echo 'Deploying to Perf Environment....'
             }
         }
     }
