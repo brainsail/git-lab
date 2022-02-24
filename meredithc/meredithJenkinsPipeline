@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Stage1') {
+            steps {
+                echo 'Chuck gui build.'
+            }
+        }
+        stage('Stage2') {
+            steps {
+                echo 'Chuck gui test.'
+            }
+        }
+        stage('Stage3') {
+            steps {
+                echo 'Chuck gui deploy.'
+            }
+        }
+    }
+}
