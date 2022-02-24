@@ -3,7 +3,7 @@ pipeline {
 
     stages {
 
-        stage (Lint) {
+        stage ('Lint') {
             when {
                 branch 'feature/*'
             }
@@ -12,7 +12,7 @@ pipeline {
             }   
         }
 
-        stage (Build) {
+        stage ('Build') {
             when {
                 branch 'feature/* main'
             }
