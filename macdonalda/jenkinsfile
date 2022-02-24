@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('test') {
+            steps {
+                echo 'Hello World from gui-macdonalda junit tests'
+            }
+        }
+        stage('build') {
+            steps {
+                echo 'Hello World from gui-macdonalda building'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'Hello World from gui-macdonalda deploying to test environment'
+            }
+        }
+    }
+}
